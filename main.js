@@ -5,19 +5,19 @@
 //    al posto dei multipli sia di 3 che di 5 stampi "FizzBuzz"
 
 //Scrivere un array contenenti i numeri da1 a 100
-var numbers = [];
+var array_numbers = [];
 
 for (var i = 1; i <= 100; i++) {
-   numbers.push(i);
-   //console.log(numbers);
-
-   //estraggo i contenuti dell'array
-   var numero = numbers[i];
-
-   if (numero % 3 == 0) {
-       //    al posto dei multipli di 3 stampi "Fizz"
-       console.log('Fizz - multiplo di 3');
-   } else if (numero % 5 == 0) {
-       console.log('Buzz - multiplo di 5');
-   }
+    if (i % 3 === 0) {
+    //al posto dei multipli di 3 stampi "Fizz"
+        console.log('Fizz');
+    } else if (i % 5 === 0) {
+    //al posto dei multipli di 5 stampi "Buzz"
+        console.log('Buzz');
+    } else if (i % 3 == 0 && i % 5 == 0) {
+    //al posto dei multipli sia di 3 che di 5 stampi "FizzBuzz"
+        console.log('FizzBuzz');
+    } else {
+    console.log(i);
+    }
 }
